@@ -1,0 +1,139 @@
+/* Стили обнуления */
+/* Импортирование стилей */
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Open+Sans&family=Roboto&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Kurale&display=swap");
+
+/* конвертированный шрифт  */
+@font-face {
+	font-family: "Steamy";
+	src: url("../fonts/Steamy.woff2") format("woff2"), url("../fonts/Steamy.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+/* Стили для заголовок (Выбор Шрифтов) 
+color - цвет шрифта,
+text-shadow - создание тени
+font-size - размер шрифта в PX-х
+
+*/
+h1 {
+	color: #080000;
+	text-shadow: 1px 1px #260d0d, -5px 3px 2px rgb(143, 75, 75);
+
+	font-size: 40px;
+	font-family: "Nosifer", cursive;
+	font-weight: 400;
+}
+
+h2 {
+	text-shadow: 2px 1px 3px #4d1919;
+	color: #101010;
+	font-size: 30px;
+	font-family: "Akronim", cursive;
+}
+
+h3 {
+	color: #ff0066;
+	font-size: 20px;
+	font-family: "Akronim", cursive;
+}
+
+h5 {
+	color: #5c0099;
+	font-family: "Akronim", cursive;
+}
+
+.title__name {
+	font-family: "Steamy", cursive;
+	font-size: 18px;
+	color: #004d66;
+	/*
+text-decoration - добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. 
+Одновременно можно применить более одного стиля, перечисляя значения через пробел. Это свойство наследуется и может принимать значения:
+underline - Устанавливает подчеркнутый текст. 
+*/
+	text-decoration: underline;
+	/*
+text-transform - управляет преобразованием текста в заглавные или прописные символы.
+capitalize  - Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.
+*/
+	text-transform: capitalize;
+}
+
+body {
+	font-size: 16px;
+	color: #000033;
+	font-family: "Akronim", cursive;
+	font-family: "Kurale", serif;
+}
+p {
+	font-style: italic;
+	color: #001a00;
+}
+
+.link {
+	/* line-through - Создает перечеркнутый текст.*/
+	text-decoration: line-through;
+}
+.span__name {
+	color: #332600;
+	font-size: 22px;
+}
+
+.list__title,
+.title__name {
+	color: #194d33;
+	text-shadow: -3px 1px 3px #ff8533, 5px 3px 5px #333300;
+	text-indent: 5px;
+	font-style: oblique;
+	text-align: center;
+}
+
+.part {
+	text-shadow: 1px 1px 1px #ff5050;
+	color: #391313;
+}
+
+.footer__text {
+	color: #33001a;
+	text-shadow: -5px 1px 1px #260d0d, 1px 3px 2px rgb(143, 75, 75);
+
+	font-size: 36px;
+	font-family: "Nosifer", cursive;
+	font-weight: 400;
+	text-align: center;
+}
